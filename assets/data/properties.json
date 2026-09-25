@@ -1,0 +1,133 @@
+{
+  "topBar": {
+    "email": "info@webmail.com",
+    "address": "547 ns tower St. anglo City, USA",
+    "socials": [
+      { "name": "facebook", "url": "#facebook", "icon": "fa-brands fa-facebook-f" },
+      { "name": "twitter", "url": "#twitter", "icon": "fa-brands fa-twitter" },
+      { "name": "instagram", "url": "#instagram", "icon": "fa-brands fa-instagram" },
+      { "name": "youtube", "url": "#youtube", "icon": "fa-brands fa-youtube" },
+      { "name": "pinterest", "url": "#pinterest", "icon": "fa-brands fa-pinterest-p" }
+    ]
+  },
+  "hero": {
+    "headline": "Find the best Real Estate on your country .",
+    "subline": "With over 1 million homes for sale available on the website, Renting can match you with a house.",
+    "ctaText": "Start membership",
+    "ctaLink": "#membership",
+    "revenue": "$7454.21",
+    "heroImage": "./assets/images/hero-villa.png"
+  },
+  "guides": [
+    {
+      "icon": "fa-solid fa-user-tie",
+      "title": "Buyer Guides",
+      "desc": "Nurture valuable leads into customers, and turn one time."
+    },
+    {
+      "icon": "fa-solid fa-user-shield",
+      "title": "Renter Guides",
+      "desc": "Build brand awareness on the top social media networks."
+    },
+    {
+      "icon": "fa-solid fa-house-chimney",
+      "title": "Seller Guides",
+      "desc": "Get professionally-written content that attracts qualified."
+    }
+  ],
+  "services": [
+    {
+      "icon": "fa-solid fa-bed",
+      "title": "Bed Rooms",
+      "desc": "Desktop publishing software like aldus page maker including"
+    },
+    {
+      "icon": "fa-solid fa-bath",
+      "title": "Swimming pool",
+      "desc": "React creative agency amet, consec tetur adipiscing elit."
+    },
+    {
+      "icon": "fa-solid fa-ruler-combined",
+      "title": "Copywriting content",
+      "desc": "The standard chunk of used since the 1500s is reproduced"
+    },
+    {
+      "icon": "fa-solid fa-house-signal",
+      "title": "Smart Home",
+      "desc": "The standard chunk of used since the 1500s is reproduced"
+    },
+    {
+      "icon": "fa-solid fa-box-archive",
+      "title": "Library area",
+      "desc": "Desktop publishing software like aldus page maker including"
+    },
+    {
+      "icon": "fa-solid fa-headset",
+      "title": "Responsive Duty",
+      "desc": "React creative agency amet, consec tetur adipiscing elit."
+    }
+  ],
+  "featuredProperties": [
+    {
+      "title": "The Stokes Appartment",
+      "location": "Cleveland, United States",
+      "price": "$2,32,120",
+      "image": "./assets/images/scandinavian-apartment.png",
+      "isPrimary": true
+    },
+    {
+      "title": "The Stokes Appartment",
+      "location": "Cleveland, United States",
+      "price": "$2,32,120",
+      "image": "./assets/images/condominium-building.png",
+      "isPrimary": false
+    },
+    {
+      "title": "The Stokes Appartment",
+      "location": "Cleveland, United States",
+      "price": "$2,32,120",
+      "image": "./assets/images/villa-pool.png",
+      "isPrimary": false
+    }
+  ],
+  "locationProjects": [
+    {
+      "city": "San Francisco, California",
+      "image": "./assets/images/condominium-building.png"
+    },
+    {
+      "city": "Washington DC",
+      "image": "./assets/images/residential-complex.png"
+    },
+    {
+      "city": "Chicago",
+      "image": "./assets/images/neighborhood-street.png"
+    }
+  ],
+  "blogPosts": [
+    {
+      "title": "How to rent a home very easily?",
+      "category": "Rentals",
+      "desc": "How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...",
+      "time": "3 years ago",
+      "author": "Mike Hesson",
+      "image": "./assets/images/studio-apartment.png"
+    },
+    {
+      "title": "How to rent a home very easily?",
+      "category": "Rentals",
+      "desc": "How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...",
+      "time": "3 years ago",
+      "author": "Mike Hesson",
+      "image": "./assets/images/handing-keys.png"
+    },
+    {
+      "title": "How to rent a home very easily?",
+      "category": "Rentals",
+      "desc": "How to rent a home very easily in this pandemic situation. You can rent house through using our platfrom...",
+      "time": "3 years ago",
+      "author": "Mike Hesson",
+      "image": "./assets/images/neighborhood-street.png"
+    }
+  ]
+}

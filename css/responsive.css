@@ -1,0 +1,148 @@
+/* ==========================================================================
+   RESPONSIVE STYLES
+   Media Queries for Mobile, Tablet, and Desktop
+   ========================================================================== */
+
+/* Mobile First - Default styles are for mobile */
+
+/* Small Devices (≥640px) */
+@media (min-width: 640px) {
+  /* Header */
+  .login-btn {
+    display: inline-block;
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-sub-bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Medium Devices (≥768px) */
+@media (min-width: 768px) {
+  /* Navigation */
+  .nav-links {
+    display: flex;
+  }
+  
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  /* Grids */
+  .guides-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .property-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .location-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Featured Header */
+  .featured-header-row {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+/* Large Devices (≥1024px) */
+@media (min-width: 1024px) {
+  /* Container */
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 4rem 0 7rem;
+  }
+  
+  .hero-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .hero-content {
+    grid-column: span 6;
+  }
+  
+  .hero-visual {
+    grid-column: span 6;
+  }
+  
+  /* Dream Spaces */
+  .dream-spaces-row {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .dream-spaces-visual {
+    grid-column: span 7;
+  }
+  
+  .dream-spaces-content {
+    grid-column: span 5;
+    padding-left: 1.5rem;
+  }
+  
+  /* Today Sells */
+  .today-sells-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .today-sells-content {
+    grid-column: span 5;
+  }
+  
+  .today-sells-images {
+    grid-column: span 7;
+  }
+  
+  /* Services */
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Testimonials */
+  .testimonial-box-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .testimonial-quote-wrap {
+    padding-left: 2rem;
+  }
+  
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .contact-info-col {
+    grid-column: span 6;
+  }
+  
+  .contact-form-col {
+    grid-column: span 6;
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
+  }
+}

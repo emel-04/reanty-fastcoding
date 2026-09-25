@@ -1,0 +1,330 @@
+/* ==========================================================================
+   COMPONENTS
+   Reusable UI Components
+   ========================================================================== */
+
+/* Buttons */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  background-color: var(--color-brand);
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: var(--color-brand-hover);
+}
+
+.outline-btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid var(--color-brand);
+  color: var(--color-brand);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.outline-btn:hover {
+  background-color: var(--color-brand);
+  color: #ffffff;
+}
+
+.submit-btn {
+  padding: 0.625rem 2rem;
+  background-color: var(--color-brand);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: var(--color-brand-hover);
+}
+
+/* Cards */
+.guide-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #f3f4f6;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.guide-card:hover {
+  background-color: var(--color-brand);
+  box-shadow: var(--shadow-orange-glow);
+  transform: translateY(-4px);
+}
+
+.guide-icon-box {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 50%;
+  background-color: var(--color-brand-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-brand);
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+}
+
+.guide-card:hover .guide-icon-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.guide-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-dark-navy);
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.guide-card:hover .guide-title {
+  color: #ffffff;
+}
+
+.guide-desc {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.625;
+  max-width: 200px;
+  margin: 0 auto;
+  transition: color 0.3s ease;
+}
+
+.guide-card:hover .guide-desc {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Service Cards */
+.service-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-icon {
+  color: var(--color-brand);
+  font-size: 1.875rem;
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-dark-navy);
+  margin-bottom: 0.5rem;
+}
+
+.service-desc {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.625;
+  margin-bottom: 1.5rem;
+  max-width: 210px;
+}
+
+.service-link {
+  margin-top: auto;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-dark-navy);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.service-link:hover {
+  color: var(--color-brand);
+}
+
+/* Section Headers */
+.section-header-center {
+  text-align: center;
+  max-width: 42rem;
+  margin: 0 auto 3.5rem auto;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-dark-navy);
+  line-height: 1.25;
+}
+
+@media (min-width: 640px) {
+  .section-title {
+    font-size: 1.875rem;
+  }
+}
+
+.section-subtitle {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.625;
+}
+
+@media (min-width: 640px) {
+  .section-subtitle {
+    font-size: 0.875rem;
+  }
+}
+
+/* Badges */
+.sub-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-brand);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 0.375rem;
+}
+
+.form-control {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1rem;
+  font-size: 0.75rem;
+  color: #374151;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 1px var(--color-brand);
+}
+
+/* Slider Tabs */
+.slider-tabs-wrap {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.slider-tabs {
+  display: flex;
+  align-items: flex-end;
+}
+
+.tab-item {
+  background-color: #9ca3af;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 0.375rem 0.75rem;
+  text-transform: uppercase;
+}
+
+.tab-item.tab-2 {
+  padding-top: 0.25rem;
+  opacity: 0.9;
+}
+
+.tab-item.tab-3 {
+  padding-top: 0.125rem;
+  opacity: 0.8;
+}
+
+.slider-counter {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.125rem;
+}
+
+.counter-bar {
+  width: 1.5rem;
+  height: 2px;
+  background-color: #000000;
+}
+
+.counter-bar.orange {
+  background-color: var(--color-brand);
+}
+
+.counter-active {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.counter-dim {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9ca3af;
+  padding-bottom: 0.5rem;
+}
+
+.filter-btn {
+  background: none;
+  color: #9ca3af;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom: 0.25rem;
+  transition: color 0.2s;
+}
+
+.filter-btn.active {
+  color: #374151;
+  border-bottom: 2px solid var(--color-brand);
+}
+
+.filter-btn:hover {
+  color: #374151;
+}
