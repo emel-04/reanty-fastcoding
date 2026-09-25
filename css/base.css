@@ -1,0 +1,109 @@
+/* ==========================================================================
+   BASE STYLES
+   Reset, Variables, and Global Styles
+   ========================================================================== */
+
+/* CSS Variables */
+:root {
+  /* Brand Colors */
+  --color-brand: #ff5a36;
+  --color-brand-hover: #f04924;
+  --color-brand-light: #ffe8e2;
+  --color-brand-bg: #fff5f2;
+  
+  /* Dark Colors */
+  --color-dark-navy: #111726;
+  --color-dark-header: #0c1a24;
+  --color-footer-dark: #121824;
+  
+  /* Text Colors */
+  --color-text-main: #565e6c;
+  --color-text-muted: #9ca3af;
+  
+  /* Background Colors */
+  --color-bg-light: #fbfcfd;
+  --color-bg-form: #f2f6f7;
+  --color-border: #f3f4f6;
+  
+  /* Typography */
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  /* Shadows */
+  --shadow-soft: 0 20px 40px -15px rgba(0, 0, 0, 0.07), 0 0 1px 1px rgba(0, 0, 0, 0.03);
+  --shadow-orange-glow: 0 10px 25px -5px rgba(255, 90, 54, 0.4);
+  
+  /* Layout */
+  --container-max-width: 1280px;
+  
+  /* Border Radius */
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: var(--font-family);
+  background-color: #ffffff;
+  color: var(--color-text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+/* Form Elements */
+button, input, textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes */
+.text-brand {
+  color: var(--color-brand) !important;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.section-py {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.bg-section-alt {
+  background-color: var(--color-bg-light);
+}
