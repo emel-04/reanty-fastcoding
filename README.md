@@ -89,8 +89,8 @@ Chỉnh sửa file `assets/data/properties.json` để thay đổi nội dung we
 
 ## 👤 Tác giả
 
-**Họ tên:** Đặng Mỹ Linh
-**Email:** linhdm04@gmail.com
+**Họ tên:** Đặng Mỹ Linh  
+**Email:** linhdm04@gmail.com  
 **GitHub:** https://github.com/emel-04
 
 ---
