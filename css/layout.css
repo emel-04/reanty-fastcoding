@@ -100,25 +100,38 @@
   color: #374151;
 }
 
-.nav-links a:hover {
-  color: var(--color-brand);
-}
-
-.nav-links a.active {
-  color: var(--color-brand);
-  font-weight: 600;
+.nav-links a {
   position: relative;
   padding-bottom: 0.25rem;
+  transition: all 0.3s ease;
 }
 
-.nav-links a.active::after {
+.nav-links a::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 2px;
   background-color: var(--color-brand);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-brand);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a.active {
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+.nav-links a.active::after {
+  width: 100%;
 }
 
 .auth-actions {
@@ -180,10 +193,16 @@
   font-size: 15px;
   font-weight: 600;
   color: #374151;
+  transition: color 0.3s ease;
 }
 
 .mobile-nav-menu a:hover {
   color: var(--color-brand);
+}
+
+.mobile-nav-menu a.active {
+  color: var(--color-brand);
+  font-weight: 700;
 }
 
 /* Footer */
