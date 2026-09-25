@@ -400,28 +400,51 @@ function initContactForm() {
 function initScrollSpy() {
   // Get all navigation links
   const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav-menu a');
-  const sections = document.querySelectorAll('section[id]');
+  // Get sections with id OR data-section attribute
+  const allSections = document.querySelectorAll('section[id], section[data-section]');
   
-  if (sections.length === 0) return;
+  if (allSections.length === 0) return;
   
   /**
    * Update active navigation state based on scroll position
    */
   function updateActiveNav() {
-    // Get current scroll position
-    const scrollPosition = window.scrollY + 100; // offset for header height
+    // Get current scroll position with offset for header
+    const scrollPosition = window.scrollY + 150;
+    
+    // Get window height for better detection near bottom
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
     
     let currentSection = '';
     
-    // Find which section is currently in view
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        currentSection = section.getAttribute('id');
+    // Check if we're at the bottom of the page
+    if (window.scrollY + windowHeight >= documentHeight - 50) {
+      // At bottom, find the last section with id or data-section
+      for (let i = allSections.length - 1; i >= 0; i--) {
+        const section = allSections[i];
+        currentSection = section.getAttribute('id') || section.getAttribute('data-section');
+        if (currentSection) break;
       }
-    });
+    } else {
+      // Find which section is currently in view
+      allSections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        
+        // Section is active if scroll position is within its bounds
+        if (scrollPosition >= sectionTop - 100 && scrollPosition < sectionTop + sectionHeight) {
+          // Prefer id over data-section
+          currentSection = section.getAttribute('id') || section.getAttribute('data-section');
+        }
+      });
+    }
+    
+    // If no section detected and we're near top, default to first section
+    if (!currentSection && scrollPosition < 200) {
+      const firstSection = allSections[0];
+      currentSection = firstSection.getAttribute('id') || firstSection.getAttribute('data-section');
+    }
     
     // Update active class on navigation links
     navLinks.forEach(link => {
