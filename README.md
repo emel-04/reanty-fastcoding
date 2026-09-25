@@ -1,6 +1,6 @@
 # Reanty - Fastcoding Frontend Test
 
-Bài test Frontend cho vị trí Frontend Developer tại Fastcoding VN.
+Bài test Frontend cho vị trí HTML Trainee tại Fastcoding VN.
 
 ## 🌐 Demo
 
